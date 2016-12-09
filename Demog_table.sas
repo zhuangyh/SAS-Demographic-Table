@@ -82,9 +82,6 @@ if itt;
 run;
 
 
-Proc print data = demog; 
-run;
-
 title "Frequence table of Categorical variables (gender,race)";
 Proc freq data = work.demog;
 	tables gender race;
@@ -278,8 +275,6 @@ data pvalue;
 		
 run;
 
-Proc print data = pvalue; run;
-
 data all0;
 	set all0;
 	length = length (statcode);
@@ -290,8 +285,6 @@ Proc sort data = all0;
 run;
 
 
-proc print data = all0; run;
-
 Proc transpose data = all0 out = all1 prefix =Variable;
 	by sectno length statname;
 	var statrslt;
@@ -301,8 +294,6 @@ Data all1;
 	set all1;
 	drop length;
 run;
-
-proc print data = all1; run;
 
 
 data all2;
