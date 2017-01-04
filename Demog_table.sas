@@ -1,7 +1,6 @@
 /*====================================================================
 Acknowledgement: The following codes were copied and modified from the 
-scripts published by "Ocean Bancova" (one of privious Bancova students) 
-to generate the currently assigned demog table".
+scripts published by "Ocean Bancova" to generate the currently assigned demog table".
 =====================================================================*/ 
 
 dm "log;clear;out;clear";
